@@ -77,7 +77,7 @@ p, li {
 }
 
 .img-container img {
-    max-width: 384px; /* Caps the width at roughly 4 inches max */
+    max-width: 192px; /* Caps the width at roughly 4 inches max */
     width: 100%;       /* Ensures it shrinks nicely on smaller mobile screens */
     height: auto;      /* Keeps your photos from looking stretched or distorted */
     border-radius: 6px;
