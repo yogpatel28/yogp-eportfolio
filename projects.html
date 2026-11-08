@@ -11,7 +11,7 @@
         <h1>Yog Pritul Patel</h1>
         <nav>
             <a href="index.html">Home & About</a>
-            <a href="projects.html">Projects & Discovery</a>
+            <a href="projects.html">Projects</a>
         </nav>
     </header>
 
@@ -29,32 +29,42 @@
             <h3>The Problem</h3>
             <p>Evaluating agricultural produce ripeness accurately without destructive testing remains a persistent challenge in supply chains and consumer settings. Visual inspection alone is frequently subjective and unreliable, leading to premature food waste or consumption of underripe produce. The core engineering objective for this individual discovery project was to design, prototype, and program an automated, low-cost optical sensing device capable of reliably quantifying fruit color parameters to assess ripeness objectively.</p>
 
+            <div class="img-container">
+                <img src="images/IMG_2648.jpg" alt="Discovery Project prototype overview">
+                <div class="img-caption">Overview of the assembled hardware prototype setup.</div>
+            </div>
+
             <h3>The Process</h3>
             <p>The development lifecycle followed a rigorous systems engineering approach, divided into hardware integration, firmware development, and mechanical enclosure design:</p>
             <ul>
                 <li><strong>Hardware Selection & Integration:</strong> At the heart of the system is an Arduino Uno microcontroller connected to an ISL29125 RGB color sensor, which measures precise red, green, and blue light reflection intensities from fruit surfaces. A 16x2 LiquidCrystal display provides real-time visual feedback, supported by tactile push buttons and status indicator LEDs.</li>
                 <li><strong>Circuit Prototyping & Schematic Design:</strong> Power rails and signal lines were routed carefully on breadboards to ensure signal integrity and prevent voltage drop across peripheral sensors before transitioning to robust wiring configurations.</li>
                 <li><strong>Firmware Engineering:</strong> Programming was executed in C++ within the Arduino IDE. Custom sensor polling loops were written to calibrate ambient light thresholds, filter raw sensor noise, and map RGB reflectance values against standardized ripeness index algorithms.</li>
-                <li><strong>Mechanical Enclosure Fabrication:</strong> To eliminate ambient light interference—which severely disrupts optical sensors—I designed a custom cylindrical shroud in Autodesk Tinkercad and fabricated it using 3D printing. The shroud fits securely over the sensor head, ensuring consistent optical isolation during testing.</li>
+                <li><strong>Mechanical Enclosure Fabrication:</strong> To eliminate ambient light interference—which severely disrupts optical sensors—I designed a custom cylindrical shroud in Autodesk Fusion 360 and fabricated it using 3D printing. The shroud fits securely over the sensor head, ensuring consistent optical isolation during testing.</li>
             </ul>
 
             <div class="img-container">
-                <img src="images/discovery-project.jpg" alt="Assembled Discovery Project prototype">
-                <div class="img-caption">Fully assembled ECE 1100 Individual Discovery Project prototype featuring custom 3D-printed shroud.</div>
+                <img src="images/IMG_2647.jpg" alt="Sensor and wiring detail">
+                <div class="img-caption">Detailed view of sensor wiring and microcontroller integration.</div>
+            </div>
+
+            <div class="img-container">
+                <img src="images/IMG_2649.jpg" alt="Mechanical enclosure and 3D printed shroud">
+                <div class="img-caption">Custom 3D-printed enclosure designed in Fusion 360.</div>
             </div>
 
             <h3>The Outcome</h3>
             <p>The resulting prototype successfully differentiates between unripe, ripe, and overripe fruit samples based on quantified chromatic reflectance ratios displayed directly on the LCD interface. This project strengthened my practical competence in microcontroller interfacing, sensor calibration, C++ programming, and mechanical prototyping—providing a scalable foundation that I will continue to expand throughout my engineering education at Georgia Institute of Technology.</p>
 
             <div class="img-container">
-                <img src="images/schematic.png" alt="Electrical wiring schematic diagram">
-                <div class="img-caption">System wiring schematic showing microcontroller pin mappings and sensor connections.</div>
+                <img src="images/IMG_2650.jpg" alt="Final system testing and display output">
+                <div class="img-caption">System testing displaying ripeness evaluation output on the 16x2 LCD screen.</div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Yog Pritul Patel. Built for ECE 1100 at Georgia Institute of Technology.</p>
+        <p>&copy; 2026 Yog Pritul Patel.</p>
     </footer>
 </body>
 </html>
