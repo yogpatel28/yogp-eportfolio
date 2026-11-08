@@ -77,7 +77,8 @@ p, li {
 }
 
 .img-container img {
-    max-width: 100%;
+    max-width: 600px; /* Change this number to make them bigger or smaller */
+    width: 100%;
     height: auto;
     border-radius: 6px;
     border: 1px solid var(--border-color);
