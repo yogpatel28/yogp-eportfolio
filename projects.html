@@ -20,47 +20,58 @@
         <!-- Technical Projects Overview -->
         <section>
             <h2>Technical Projects Portfolio</h2>
-            <p>This section serves as a scalable repository for my engineering design work, hardware builds, and software scripts. Each project demonstrates practical application of classroom theory to solve physical engineering challenges.</p>
+            <p>This section serves as a scalable, comprehensive repository for my engineering design work, hardware builds, and embedded software scripts. Each project demonstrates the practical application of core electrical engineering theory, microcontroller programming, and rigorous systems-level problem solving to address physical engineering challenges.</p>
+        </section>
+
+        <!-- Professional Elevator Pitch -->
+        <section>
+            <h2>Professional Elevator Pitch</h2>
+            <p><em>"Hi, I'm Yog Patel, a first-year Electrical Engineering student at the Georgia Institute of Technology specializing in embedded systems and hardware integration. I combine rigorous academic coursework with hands-on prototyping—from programming microcontrollers and designing custom 3D-printed enclosures to routing circuit boards. I am actively seeking engineering internship opportunities for Summer 2027 where I can apply my analytical problem-solving and technical skill set to build robust, real-world hardware solutions."</em></p>
         </section>
 
         <!-- Discovery Project Feature -->
         <section>
             <h2>Discovery Project Feature: Automated Fruit Ripeness Evaluation System</h2>
             
-            <h3>The Problem</h3>
-            <p>Evaluating agricultural produce ripeness accurately without destructive testing remains a persistent challenge in supply chains and consumer settings. Visual inspection alone is frequently subjective and unreliable, leading to premature food waste or consumption of underripe produce. The core engineering objective for this individual discovery project was to design, prototype, and program an automated, low-cost optical sensing device capable of reliably quantifying fruit color parameters to assess ripeness objectively.</p>
+            <h3>Project Overview & Motivation</h3>
+            <p>Evaluating agricultural produce ripeness accurately without destructive testing remains a persistent challenge in supply chains and consumer settings. Visual inspection alone is frequently subjective and unreliable, leading to premature food waste or consumption of underripe produce. The core engineering objective for this individual discovery project was to design, prototype, and program an automated, low-cost optical sensing device capable of reliably quantifying fruit color parameters to assess ripeness objectively. By automating this evaluation process, producers and distribution centers can significantly reduce manual inspection errors, ensuring consistent quality control from farm to shelf.</p>
 
             <div class="img-container">
-                <img src="images/IMG_2648.jpeg" alt="Discovery Project prototype overview">
+                <img src="images/IMG_2648.jpg" alt="Discovery Project prototype overview">
                 <div class="img-caption">Overview of the assembled hardware prototype setup.</div>
             </div>
 
-            <h3>The Process</h3>
-            <p>The development lifecycle followed a rigorous systems engineering approach, divided into hardware integration, firmware development, and mechanical enclosure design:</p>
+            <h3>System Architecture & Development Methodology</h3>
+            <p>The entire development lifecycle followed a disciplined systems engineering approach, systematically divided into hardware integration, firmware development, circuit prototyping, and mechanical enclosure design:</p>
             <ul>
-                <li><strong>Hardware Selection & Integration:</strong> At the heart of the system is an Arduino Uno microcontroller connected to an ISL29125 RGB color sensor, which measures precise red, green, and blue light reflection intensities from fruit surfaces. A 16x2 LiquidCrystal display provides real-time visual feedback, supported by tactile push buttons and status indicator LEDs.</li>
-                <li><strong>Circuit Prototyping & Schematic Design:</strong> Power rails and signal lines were routed carefully on breadboards to ensure signal integrity and prevent voltage drop across peripheral sensors before transitioning to robust wiring configurations.</li>
-                <li><strong>Firmware Engineering:</strong> Programming was executed in C++ within the Arduino IDE. Custom sensor polling loops were written to calibrate ambient light thresholds, filter raw sensor noise, and map RGB reflectance values against standardized ripeness index algorithms.</li>
-                <li><strong>Mechanical Enclosure Fabrication:</strong> To eliminate ambient light interference—which severely disrupts optical sensors—I designed a custom cylindrical shroud in Autodesk Fusion 360 and fabricated it using 3D printing. The shroud fits securely over the sensor head, ensuring consistent optical isolation during testing.</li>
+                <li><strong>Hardware Selection & Integration:</strong> At the heart of the system architecture is an Arduino microcontroller connected directly to an ISL29125 RGB color sensor. This precision sensor measures exact red, green, and blue light reflection intensities bouncing off fruit surfaces under controlled illumination. A 16x2 LiquidCrystal display provides immediate visual feedback, supported by tactile push buttons and status indicator LEDs for user interaction. Particular attention was dedicated to maintaining stable voltage regulation across the power rails, preventing transient current spikes from introducing measurement errors during continuous sensor polling.</li>
+                <li><strong>Circuit Prototyping & Power Distribution:</strong> Power rails, ground loops, and signal lines were routed carefully on breadboards to ensure optimal signal integrity, minimize electrical noise, and prevent voltage drop across peripheral sensors prior to finalizing wiring configurations.</li>
+                <li><strong>Firmware Engineering:</strong> Programming was executed in C++ within the Arduino IDE environment. Custom sensor polling loops were written to calibrate ambient light baselines, filter raw sensor background noise, and map RGB reflectance values against standardized algorithmic thresholds.</li>
+                <li><strong>Mechanical Enclosure & CAD Fabrication:</strong> To eliminate ambient room light interference—which severely disrupts optical sensors—I designed a custom cylindrical light shroud in Autodesk Fusion 360 and fabricated it via 3D printing. The shroud fits securely over the sensor head, ensuring consistent optical isolation during testing.</li>
             </ul>
 
             <div class="img-container">
-                <img src="images/IMG_2647.jpeg" alt="Sensor and wiring detail">
+                <img src="images/IMG_2647.jpg" alt="Sensor and wiring detail">
                 <div class="img-caption">Detailed view of sensor wiring and microcontroller integration.</div>
             </div>
 
             <div class="img-container">
-                <img src="images/IMG_2649.jpeg" alt="Mechanical enclosure and 3D printed shroud">
+                <img src="images/IMG_2649.jpg" alt="Mechanical enclosure and 3D printed shroud">
                 <div class="img-caption">Custom 3D-printed enclosure designed in Autodesk Fusion 360.</div>
             </div>
 
-            <h3>The Outcome</h3>
-            <p>The resulting prototype successfully differentiates between unripe, ripe, and overripe fruit samples based on quantified chromatic reflectance ratios displayed directly on the LCD interface. This project strengthened my practical competence in microcontroller interfacing, sensor calibration, C++ programming, and mechanical prototyping—providing a scalable foundation that I will continue to expand throughout my engineering education at Georgia Institute of Technology.</p>
+            <h3>Engineering Challenges & Solutions</h3>
+            <p>During testing, initial readings fluctuated due to external ambient light bleeding into the sensor aperture. To solve this, I optimized the CAD enclosure geometry to create a tight, light-tight seal against curved fruit surfaces. Additionally, I implemented software-side moving average filters in C++ to smooth out raw ADC conversion jitters, resulting in stable, repeatable color ratio outputs on the LCD screen.</p>
+
+            <h3>Project Outcomes & Future Scalability</h3>
+            <p>The resulting prototype successfully differentiates between unripe, ripe, and overripe fruit samples based on quantified chromatic reflectance ratios displayed directly on the LCD interface. This project significantly strengthened my practical competence in microcontroller interfacing, sensor calibration, C++ software logic, and mechanical prototyping.</p>
 
             <div class="img-container">
-                <img src="images/IMG_2650.jpeg" alt="Final system testing and display output">
+                <img src="images/IMG_2650.jpg" alt="Final system testing and display output">
                 <div class="img-caption">System testing displaying ripeness evaluation output on the 16x2 LCD screen.</div>
             </div>
+            
+            <p><strong>Future Iteration Roadmap:</strong> Future expansions for this architecture include integrating a rechargeable lithium-ion power management circuit, transitioning from a breadboard layout to a custom printed circuit board (PCB) designed in KiCad, and utilizing Bluetooth Low Energy (BLE) to transmit ripeness metrics directly to a mobile dashboard app. Integrating low-power wireless telemetry modules will further enable real-time cloud data logging, transforming this portable prototype into a connected IoT inspection node for agricultural monitoring.</p>
         </section>
     </main>
 
