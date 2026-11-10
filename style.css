@@ -77,7 +77,7 @@ p, li {
 }
 
 .img-container img {
-    max-width: 192px; /* Caps width at roughly 2 inches */
+    max-width: 288px; /* Caps width at roughly 2 inches */
     width: 100%;       
     height: auto;      
     border-radius: 6px;
